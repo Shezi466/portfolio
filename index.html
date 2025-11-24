@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M Shahzad - Game Developer Portfolio</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #1e1e2f, #0f0f1c);
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+            background-color: #0f0f1c;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* dark blue gradient */
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 2px solid rgba(0, 255, 255, 0.2);
+            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.05);
+        }
+
+            header h1 {
+                font-size: 3rem;
+                margin: 0;
+                background: linear-gradient(90deg, #00ffff, #ff00ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+
+            header .tagline {
+                font-size: 1.1rem;
+                color: #cccccc;
+                margin-top: 10px;
+                font-style: italic;
+            }
+
+            header p {
+                font-size: 1.1rem;
+                margin: 0.5rem 0;
+            }
+
+        .contact {
+            margin-top: 1rem;
+        }
+
+            .contact a {
+                color: #00f0ff;
+                text-decoration: none;
+                margin: 0 0.5rem;
+            }
+
+        .section {
+            padding: 2rem;
+        }
+
+            .section h2 {
+                text-align: center;
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+                padding-bottom: 0.6rem;
+                border-bottom: 2px solid #333;
+                color: #00f0ff;
+            }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .game-card {
+            background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+            border-radius: 12px;
+            padding: 12px;
+            margin: 10px;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+            transition: transform 0.2s, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+            .game-card:hover {
+                transform: scale(1.03);
+                box-shadow: 0 0 15px rgba(0, 200, 255, 0.3);
+            }
+
+            .game-card img {
+                width: 90px;
+                height: 90px;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+
+            .game-card h3 {
+                font-size: 1rem;
+                margin: 0.5rem 0;
+                min-height: 2rem;
+            }
+
+        .store-btn {
+            margin-top: 0.5rem;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+            .store-btn img {
+                width: 140px;
+                height: auto;
+            }
+
+        header h1, header p, .contact a span {
+            color: white;
+        }
+
+        .contact a {
+            margin-right: 1rem;
+            text-decoration: none;
+        }
+
+            .contact a:hover {
+                text-decoration: underline;
+            }
+        /* Galaxy Store button tweak (keeps same look on dark bg) */
+        .app-store-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(0,0,0,0.45);
+            border-radius: 8px;
+            padding: 6px 10px;
+            color: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+            text-decoration: none;
+        }
+
+            .app-store-button svg {
+                filter: drop-shadow(0 1px 1px rgba(0,0,0,0.4));
+            }
+
+            .app-store-button img {
+                height: 32px;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>M Shahzad</h1>
+        <p>Unity Game Developer | 3.5+ Years Experience</p>
+        <p>🎮 Unity Game Developer | 🚀 Turning ideas into interactive worlds | 💡 C# | 🛠️ Gameplay & Systems Design</p>
+        <p>Working in AdMob, AppLovin Integration & In-App Purchases</p>
+        <div class="contact">
+            <a href="mailto:m.sahmad466@gmail.com" target="_blank">
+                <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Gmail" style="width: 20px; vertical-align: middle; margin-right: 6px;">
+                Email
+            </a>
+            <a href="https://www.linkedin.com/in/m-shahzad466?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 20px; vertical-align: middle; margin-right: 6px;">
+                LinkedIn
+            </a>
+            <a href="https://wa.me/923420221975" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; vertical-align: middle; margin-right: 6px;">
+                WhatsApp
+            </a>
+        </div>
+    </header>
+
+
+
+    <section class="section">
+        <h2 style="color: #00ffff; font-size: 1.8rem; margin-bottom: 1rem; text-shadow: 0 0 8px #00ffff;">📱 iOS Games (From Scratch)</h2>
+        <div class="games-grid" id="ios-scratch"></div>
+    </section>
+
+    <section class="section">
+        <h2 style="color: #00ffff; font-size: 1.8rem; margin-bottom: 1rem; text-shadow: 0 0 8px #00ffff;">🤖 Android Games (From Scratch)</h2>
+        <div class="games-grid" id="android-scratch"></div>
+    </section>
+    <section class="section">
+        <h2 style="color: #00ffff; font-size: 1.8rem; margin-bottom: 1rem; text-shadow: 0 0 8px #00ffff;">🛒 Galaxy Store Games</h2>
+        <div class="games-grid" id="galaxy-store"></div>
+    </section>
+    <section class="section">
+        <h2 style="color: #00ffff; font-size: 1.8rem; margin-bottom: 1rem; text-shadow: 0 0 8px #00ffff;">🛠️ Working / Updates on iOS Games</h2>
+        <div class="games-grid" id="ios-updates"></div>
+    </section>
+
+
+    <section class="section">
+        <h2 style="color: #00ffff; font-size: 1.8rem; margin-bottom: 1rem; text-shadow: 0 0 8px #00ffff;">🧹 Working / Updates on Android Games</h2>
+        <div class="games-grid" id="android-updates"></div>
+    </section>
+
+
+    <script>async function fetchIconAndName(url, isIOS, gameObj) {
+            try {
+                if (isIOS) {
+
+                    return {
+                        icon: gameObj.icon || "",
+                        name: gameObj.name || "Untitled Game",
+                    };
+                    const idMatch = url.match(/id(\d+)/);
+                    if (!idMatch) return { icon: "", name: "Untitled Game" };
+
+                    const id = idMatch[1];
+
+                    try {
+                        const res = await fetch(`https://itunes.apple.com/lookup?id=${id}&country=pk`);
+                        if (!res.ok) throw new Error("Fetch failed");
+
+                        const data = await res.json();
+                        const result = data.results?.[0];
+
+                        return {
+                            icon: result?.artworkUrl512 || result?.artworkUrl100 || "",
+                            name: result?.trackName || "Untitled Game",
+                        };
+                    } catch (e) {
+                        console.error("iOS lookup failed", e);
+                        return { icon: "", name: "Untitled Game" };
+                    }
+                }
+                else {
+                    // Use provided values directly for Android
+                    return {
+                        icon: gameObj.icon || "",
+                        name: gameObj.name || "Untitled Game",
+                    };
+                }
+            } catch (e) {
+                return { icon: "", name: "Untitled Game" };
+            }
+        }
+
+        async function renderGames(containerId, games, isIOS) {
+            const container = document.getElementById(containerId);
+            for (let game of games) {
+                const { icon, name } = await fetchIconAndName(game.url, isIOS, game);
+                const card = document.createElement("div");
+                card.className = "game-card";
+
+                // choose badge img based on url
+                let badgeImg = 'https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg'; // default Google Play
+                if (isIOS) {
+                    badgeImg = 'https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg';
+                } else if (game.url && game.url.includes('galaxystore.samsung.com')) {
+                    // Samsung / Galaxy Store: use text + Samsung logo (inline SVG) as fallback
+                    badgeImg = ''; // we'll use inline HTML for Samsung below
+                }
+                else {
+                    badgeImg = '';
+                }
+
+                // build innerHTML; Samsung uses a custom button if badgeImg empty
+                let storeButtonHtml = '';
+                if (badgeImg) {
+                    storeButtonHtml = `<a class="store-btn" href="${game.url}" target="_blank">
+                              <img src="${badgeImg}" alt="Store" />
+                            </a>`;
+                } else {
+                    // Samsung button (same visual weight as others)
+                    storeButtonHtml = `<a class="store-btn" href="${game.url}" target="_blank" style="text-decoration:none;">
+                              <div class="app-store-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:8px;fill:white;">
+                                  <path d="M21.5 3h-19C1.224 3 1 3.224 1 3.5v17C1 20.776 1.224 21 1.5 21h19c.276 0 .5-.224.5-.5v-17c0-.276-.224-.5-.5-.5zM8 18H4V6h4v12zm12 0h-8V6h8v12z"/>
+                                </svg>
+                                <span style="font-weight:bold;color:white;vertical-align:middle;">Available on Galaxy Store</span>
+                              </div>
+                            </a>`;
+                }
+
+                card.innerHTML = `
+          <img src="${icon}" alt="${name}" />
+          <h3>${name}</h3>
+          ${storeButtonHtml}
+        `;
+                container.appendChild(card);
+            }
+        }
+
+
+
+        // Keep your original arrays here
+        const iosScratch = [
+            {
+                url: "https://apps.apple.com/xk/app/ultimate-drive-journey/id6738776307",
+                name: "Ultimate Drive Journey",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/46/02/2a4602f6-0d4f-1262-2783-554927fc72cf/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/230x0w.webp"
+            },
+            {
+                url: "https://apps.apple.com/pk/app/grocery-store-cashier-games/id6535686798",
+                name: "Grocery Store Cashier Games",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ba/c7/68/bac768bd-b778-7b17-4975-74f12d62d2b2/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/230x0w.webp"
+            },
+            {
+                url: "https://apps.apple.com/pk/app/super-car-evolution/id6449218708",
+                name: "Super Car Evolution",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7f/69/dd/7f69dd2e-63e0-fa59-2b51-4812b6073738/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200ia-75.webp"
+            },
+            {
+                url: "https://apps.apple.com/xk/app/balloon-sort-color-bubble-game/id6740007647",
+                name: "Balloon Sort Color Bubble game",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7c/e8/36/7ce8360d-4848-389a-65a9-61b793045873/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/230x0w.webp"
+            },
+            {
+                url: "https://apps.apple.com/pk/app/bus-rush-mania-city-racer/id6504246159",
+                name: "Bus Rush Mania City Racer",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/83/e6/a5/83e6a50a-553e-7548-fd9f-8ae13ce0323d/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/230x0w.webp"
+            },
+            {
+                url: "https://apps.apple.com/pk/app/gt-gangster-super-fighter-game/id6450107834",
+                name: "GT Gangster Super Fighter Game",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/98/25/9f/98259f46-a05c-877f-2b75-e3e89829ce0a/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/230x0w.webp"
+            },
+            {
+                url: "https://apps.apple.com/pk/app/grocery-chain-superhero/id6737834931",
+                name: "Grocery Chain Superhero",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5f/82/b9/5f82b97d-8593-5ba9-48ed-3dbfb6b5a323/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/230x0w.webp"
+            },
+            {
+                url: "https://apps.apple.com/us/app/gun-master-weapon-craft-run/id6483211797",
+                name: "Gun Master: Weapon Craft Run",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/47/c4/d0/47c4d05b-0c53-bdfc-3175-76a8d841289a/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/230x0w.webp"
+            }
+        ];
+
+        const iosUpdates = [
+            {
+                url: "https://apps.apple.com/pk/app/gangster-fish-head-city-battle/id6469784800",
+                name: "Gangster Fish Head City Battle",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/06/05/60/06056005-f8f0-6416-61a6-2cbb541b28a4/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/230x0w.webp"
+            },
+            {
+                url: "https://apps.apple.com/pk/app/angry-cat-gangster-crime-prank/id6473621285",
+                name: "Angry Cat Gangster Crime Prank",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ec/09/77/ec0977ab-1517-1285-8b03-93ccf984a661/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/230x0w.webp"
+            },
+            {
+                url: "https://apps.apple.com/pk/app/gangster-city-banana-hero-man/id6466628400",
+                name: "Gangster City Banana Hero Man",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/90/fc/a5/90fca578-3000-ae0d-29b8-2fa7f3410868/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/230x0w.webp"
+            },
+            {
+                url: "https://apps.apple.com/pk/app/gt-gangster-vice-crime-mafia/id6448944410",
+                name: "GT Gangster Vice Crime Mafia",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/47/f4/61/47f4615c-f963-d279-570b-08ae909c66dd/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/230x0w.webp"
+            },
+            {
+                url: "https://apps.apple.com/pk/app/snake-hunter-sniper-3d/id6445883978",
+                name: "Snake Hunter Sniper 3D",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9a/df/f1/9adff101-a2a3-1905-eea0-fff9f08a84fb/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/230x0w.webp"
+            },
+            {
+                url: "https://apps.apple.com/az/app/gorilla-mob-city-gangster/id6553989158",
+                name: "Gorilla Mob City Gangster",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e3/6c/60/e36c60ec-e06d-67ca-b6b5-50667790d7a8/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/230x0w.webp"
+            },
+            {
+                url: "https://apps.apple.com/us/app/street-crime-gangster-gangs-3d/id6748323044",
+                name: "Street Crime Gangster Gangs 3D",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fe/a2/27/fea22740-b9f1-6f63-911b-f4b82a30bd61/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/230x0w.webp"
+            },
+            {
+                url: "https://apps.apple.com/pk/app/us-army-vehicle-transport-game/id1658309122",
+                name: "US Army Vehicle Transport Game",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bf/38/40/bf3840e5-dbd0-ab70-3b25-59e5264f4099/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/200x200ia-75.webp"
+            },
+            {
+                url: "https://apps.apple.com/pk/app/gta-gangsters-crime-city-game/id6450585333",
+                name: "GTA Gangsters Crime City Game",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7e/75/da/7e75da73-316d-8d4e-0173-f207927268ed/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/200x200ia-75.webp"
+            },
+            {
+                url: "https://apps.apple.com/pk/app/superhero-gt-racing-car-stunt/id6449775440",
+                name: "Superhero GT Racing Car Stunt",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8a/a5/17/8aa5174f-7bf5-ec10-7b2e-fca525b43d86/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/200x200ia-75.webp"
+            },
+            {
+                url: "https://apps.apple.com/pk/app/ultimate-city-bus-simulator/id6468026442",
+                name: "Ultimate City Bus Simulator",
+                icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/33/45/11/334511ce-fc08-78db-af8b-ac088aafbacf/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200ia-75.webp"
+            }
+        ];
+
+
+
+        const androidScratch = [
+            {
+                name: "Hr Manager Job Games",
+                url: "https://play.google.com/store/apps/details?id=com.markgamingstudio.hr.job.finder.simulater.games",
+                icon: "https://play-lh.googleusercontent.com/cmt5f3NYXdXdvV-586TbIqkSkgiRAwAiBeKQthlWckapg9BM94hULDqq3n-y1gS4DhVWlcOHaTh85gBvBb1g=w240-h480-rw"
+            },
+            {
+                name: "Bird Sorting",
+                url: "https://play.google.com/store/apps/details?id=com.gc.bird.sorting.color.game",
+                icon: "https://play-lh.googleusercontent.com/OKj-YaqUgY-ezLiI194F5637XEM0r0bE4NogrDaiA1fpI1DAOZuay9JLtKcyhdOwYQ=w240-h480-rw"
+            },
+            {
+                name: "Cooking Chef Kitchen",
+                url: "https://play.google.com/store/apps/details?id=com.gcr.cooking.cheft.set.kitchen.games",
+                icon: "https://play-lh.googleusercontent.com/PLmx1VYMEr3eyz0t5T9GttKHecz3giunG1cqcoRhNYwYsFekn47vjt45dS449lFVzZ2K=w240-h480-rw"
+            },
+            {
+                name: "Dream Restaurant Tycoon 3D",
+                url: "https://play.google.com/store/apps/details?id=com.MarkStudio.DreamRestaurantTycoon3Didle",
+                icon: "https://play-lh.googleusercontent.com/kO4uX238zBjVaMFtak7-sthzVRIBGlQ7TVfW7lokmA23nCRdzy9PZDeZuLVaAScUqHM=w240-h480-rw"
+            }
+        ];
+
+        const androidUpdates = [
+            {
+                name: "Gangster Game Vegas Crime",
+                url: "https://play.google.com/store/apps/details?id=com.gcr.gangster.theft.crime.simulator.game",
+                icon: "https://play-lh.googleusercontent.com/-kgdBQTNhfRpufhhytjd7tHnqSeBJFa_PNXH_BgY4pTYbxLlHQtbnr84NRvVlHTlzKY=w240-h480-rw"
+            },
+            {
+                name: "Offroad Pickup: Mud Truck Game",
+                url: "https://play.google.com/store/apps/details?id=com.markgamingstudio.mud.truck.gaming",
+                icon: "https://play-lh.googleusercontent.com/PkMmFxZVoHtemxERjKby_0fS2bgYuXyr0SjPGdMJEwAzm-mhjwdyJqpqn3vkXkKJCIsp=w240-h480-rw"
+            },
+            {
+                name: "Gangster Vegas Crime War 3D",
+                url: "https://play.google.com/store/apps/details?id=com.markgamingstudio.gangster.vegas.crime.war.simualtor.games",
+                icon: "https://play-lh.googleusercontent.com/AkgTdVz6vWkwDeafatWqRZRPn6dGgKF7uPgxUf-pLUkfQgJI9KRD7Rp5f84lGRTNoP2Abl5nQAqOpHmaRLM6_g=w240-h480-rw"
+            }
+
+        ];
+        const galaxyStore = [
+            {
+                name: "Naughty Baby VS Mother",
+                url: "https://galaxystore.samsung.com/detail/com.hg.duper.naughty.baby.mothersimulator.game",
+                icon: "https://img.samsungapps.com/productNew/000008445556/ENG/IconImage_20250926035533363_NEW_WAP_ICON_512_512.png"
+            },
+            {
+                name: "Dog Pet Simulator 3d",
+                url: "https://galaxystore.samsung.com/detail/com.rnr7.dogsimulator3d",
+                icon: "https://img.samsungapps.com/productNew/000008107089/ENG/IconImage_20250228081131008_NEW_WAP_ICON_512_512.png"
+            },
+            {
+                name: "Real Mother Life Simulator",
+                url: "https://appgallery.huawei.com/app/C115137085",
+                icon: "https://appimg-dra.dbankcdn.com/application/icon144/1082/63b1177df0494f5184667acdad633e71.png"
+            },
+            {
+                name: "Bird Sort Fun Puzzle Game",
+                url: "https://galaxystore.samsung.com/detail/com.hg.rhu.birdgames.birdsortsimulator.game",
+                icon: "https://img.samsungapps.com/productNew/000008398703/ENG/IconImage_20250903072521684_NEW_WAP_ICON_512_512.png"
+            },
+
+            {
+                name: "Dream League football soccer star 2025",
+                url: "https://galaxystore.samsung.com/detail/com.duperg.football.soccer.game",
+                icon: "https://img.samsungapps.com/productNew/000008143226/ENG/IconImage_20250410105042954_NEW_WAP_ICON_512_512.png"
+            },
+            {
+                name: "Indian Train Simulator",
+                url: "https://galaxystore.samsung.com/detail/com.rHighbrowInteractive.EuroTrainSim.huawei",
+                icon: "https://img.samsungapps.com/productNew/000006987731/ENG/IconImage_20250218095830118_NEW_WAP_ICON_512_512.png"
+            },
+            // aur games yahan add karo (same format)
+        ];
+
+
+        renderGames("ios-scratch", iosScratch, true);
+        renderGames("android-scratch", androidScratch, false);
+        renderGames("galaxy-store", galaxyStore, false);
+        renderGames("ios-updates", iosUpdates, true);
+        renderGames("android-updates", androidUpdates, false);</script>
+
+</body>
+</html>
+
+
+
+
+
